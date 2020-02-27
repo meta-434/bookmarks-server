@@ -4,8 +4,8 @@
   "description": "Thinkful server for bookmarks app",
   "main": "server.js",
   "scripts": {
-    "test": "mocha server.js",
-    "dev": "nodemon server.js"
+    "test": "mocha app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",

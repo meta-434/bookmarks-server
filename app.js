@@ -15,8 +15,6 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 
-app.use(bookmarksRouter)
-
 app.get('/', (req, res) => {
     res.send('Hello, world!')
 })
@@ -35,8 +33,8 @@ app.post('/bookmarks', (req, res) => {
     res.status(201).json(bookmark);
 });
 
-app.delete('/bookmarks', (req, res) => {
-
+app.delete('/bookmarks/:id', (req, res) => {
+    console.log('req.params::::', req.params);
 });
 
 app.use((error, req, res, next) => {
