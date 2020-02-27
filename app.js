@@ -4,38 +4,35 @@ const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const { v4: uuid } = require('uuid');
-const store = require('../bookmarks-server/store');
+const store = require('./store');
+
 
 const app = express();
 
 const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common';
-app.use(morgan(morganSetting))
+app.use(morgan(morganSetting));
+app.use(express.json());
 app.use(cors());
 app.use(helmet());
 
-app.use(function validateBearerToken(req, res, next) {
-    const apiToken = process.env.API_TOKEN;
-    const authToken = req.get('Authorization');
-    if (!authToken || authToken.split(' ')[1] !== apiToken) {
-        return res.status(401).json({ error: 'Unauthorized request' })
-    }
-    next()
-});
+app.use(bookmarksRouter)
 
-app.get('/bookmarks', (req, res) => {
-    return res
-        .status(200)
-        .json(store.bookmarks);
-});
+app.get('/', (req, res) => {
+    res.send('Hello, world!')
+})
+
+app.get('/bookmarks/:id', (req, res) => {
+    // indiv bookmark view.
+})
 
 app.post('/bookmarks', (req, res) => {
-    console.log(req.body[title]);
-    const { title, url, description, rating} = req.query;
+    const { title, url, description, rating} = req.body;
 
     const bookmark = { id: uuid(), title, url, description, rating };
 
     store.bookmarks.push(bookmark);
-    res.status(200).json(store.bookmarks);
+    console.log(store);
+    res.status(201).json(bookmark);
 });
 
 app.delete('/bookmarks', (req, res) => {
