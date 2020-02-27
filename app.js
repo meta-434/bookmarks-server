@@ -3,6 +3,8 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
+const { v4: uuid } = require('uuid');
+const store = require('../bookmarks-server/store');
 
 const app = express();
 
@@ -23,7 +25,21 @@ app.use(function validateBearerToken(req, res, next) {
 app.get('/bookmarks', (req, res) => {
     return res
         .status(200)
-        .send('Hello World');
+        .json(store.bookmarks);
+});
+
+app.post('/bookmarks', (req, res) => {
+    console.log(req.body[title]);
+    const { title, url, description, rating} = req.query;
+
+    const bookmark = { id: uuid(), title, url, description, rating };
+
+    store.bookmarks.push(bookmark);
+    res.status(200).json(store.bookmarks);
+});
+
+app.delete('/bookmarks', (req, res) => {
+
 });
 
 app.use((error, req, res, next) => {
