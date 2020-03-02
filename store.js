@@ -16,6 +16,6 @@ const bookmarks = [
         url: 'https://developer.mozilla.org',
         description: 'The only place to find web documentation',
         rating: 5 },
-]
+];
 
 module.exports = { bookmarks };
