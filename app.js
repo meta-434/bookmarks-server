@@ -14,9 +14,9 @@ const app = express();
 
 const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common';
 app.use(morgan(morganSetting));
-app.use(validateBearerToken);
 app.use(express.json());
 app.use(cors());
+app.use(validateBearerToken);
 app.use(helmet());
 
 app.get('/bookmarks/:id', (req, res) => {
