@@ -7,12 +7,14 @@ const helmet = require('helmet');
 const { v4: uuid } = require('uuid');
 const logger = require('./logger');
 const store = require('./store');
-
+const validateBearerToken = require('./validate-bearer-token');
+const errorHandler = require('./error-handler');
 
 const app = express();
 
 const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common';
 app.use(morgan(morganSetting));
+app.use(validateBearerToken);
 app.use(express.json());
 app.use(cors());
 app.use(helmet());
@@ -69,9 +71,10 @@ app.use((error, req, res, next) => {
     } else {
         response = { error }
     }
+    console.error(error.stack);
     res.status(500).json(response)
 });
-
+app.use(errorHandler);
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
