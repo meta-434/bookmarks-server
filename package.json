@@ -1,11 +1,13 @@
 {
   "name": "bookmarks-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Thinkful server for bookmarks app",
   "main": "server.js",
   "scripts": {
-    "test": "mocha app.js",
-    "dev": "nodemon app.js",
+    "test": "mocha --require test/setup.js",
+    "dev": "nodemon server.js",
+    "migrate": "postgrator --config postgrator-config.js",
+    "migrate:test": "env NODE_ENV=test npm run migrate",
     "start": "node app.js"
   },
   "repository": {
@@ -25,10 +27,14 @@
   "homepage": "https://github.com/meta-434/bookmarks-server#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "helmet": "^3.15.0",
-    "morgan": "^1.9.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "knex": "^0.21.0",
+    "morgan": "^1.10.0",
+    "pg": "^7.0.2",
+    "postgrator": "^3.11.1",
+    "postgrator-cli": "^3.3.0",
     "uuid": "^3.3.2",
     "valid-url": "^1.0.9"
   },
@@ -37,6 +43,7 @@
     "mocha": "^5.2.0",
     "nodemon": "^1.18.9",
     "supertest": "^3.3.0",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "postgrator-cli": "^3.3.0"
   }
 }

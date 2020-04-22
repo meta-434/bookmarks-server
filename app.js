@@ -9,15 +9,21 @@ const logger = require('./logger');
 const store = require('./store');
 const validateBearerToken = require('./validate-bearer-token');
 const errorHandler = require('./error-handler');
-
+const { NODE_ENV } = require('./config');
 const app = express();
+const BookmarksService = require('./bookmarks-service.js');
 
-const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common';
+const morganSetting = NODE_ENV === 'production' ? 'tiny' : 'common';
 app.use(morgan(morganSetting));
 app.use(express.json());
 app.use(cors());
 app.use(validateBearerToken);
 app.use(helmet());
+
+app.get(`/`, (req, res, next) => {
+    console.log('hello');
+    return res.json('hi');
+});
 
 app.get('/bookmarks/:id', (req, res) => {
     const get_id = req.params.id;
@@ -33,7 +39,13 @@ app.get('/bookmarks/:id', (req, res) => {
 });
 
 app.get('/bookmarks', (req, res) => {
-    res.status(200).json(store.bookmarks);
+    const knexInstance = req.app.get('db');
+    console.log('MADE IT HERE');
+    BookmarksService.getAllBookmarks(knexInstance)
+        .then(bookmarks => {
+            res.json(bookmarks);
+        })
+    //res.status(200).json(store.bookmarks);
 });
 
 app.post('/bookmarks', (req, res) => {
@@ -74,9 +86,12 @@ app.use((error, req, res, next) => {
     console.error(error.stack);
     res.status(500).json(response)
 });
+
 app.use(errorHandler);
-const PORT = process.env.PORT || 8000;
+const PORT = PORT || 9090;
 
 app.listen(PORT, () => {
     console.log(`Server listening at http://localhost:${PORT}`)
 });
+
+module.exports = app;
