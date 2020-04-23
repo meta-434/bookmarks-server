@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a739d3d-f367-4725-bfba-c3e86278e3bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookmarks-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/001.do.create_bookmarks.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/001.undo.create_bookmarks.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgrator-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seeds/seed.bookmarks.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookmarks-app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bookmarks-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bookmarks-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookmarks-app" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="/usr/local/Cellar/yarn/1.19.2/libexec" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -107,8 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.prebuild" />
         <item itemvalue="npm.migrate" />
         <item itemvalue="npm.migrate:test" />
@@ -138,29 +128,33 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2585" y="236" key="#start/1920.0.1920.1080/0.0.1920.1044@1920.0.1920.1080" timestamp="1583183059620" />
-    <state width="1678" height="390" key="GridCell.Tab.0.bottom" timestamp="1587549229889">
+    <state x="647" y="466" key="FileChooserDialogImpl" timestamp="1587599428103">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549229889" />
-    <state width="1678" height="390" key="GridCell.Tab.0.center" timestamp="1587549229888">
+    <state x="647" y="466" key="FileChooserDialogImpl/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587599428103" />
+    <state width="1678" height="390" key="GridCell.Tab.0.bottom" timestamp="1587608583341">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549229888" />
-    <state width="1678" height="390" key="GridCell.Tab.0.left" timestamp="1587549229887">
+    <state width="1678" height="390" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587608583341" />
+    <state width="1678" height="390" key="GridCell.Tab.0.center" timestamp="1587608583340">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549229887" />
-    <state width="1678" height="390" key="GridCell.Tab.0.right" timestamp="1587549229888">
+    <state width="1678" height="390" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587608583340" />
+    <state width="1678" height="390" key="GridCell.Tab.0.left" timestamp="1587608583339">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549229888" />
+    <state width="1678" height="390" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587608583339" />
+    <state width="1678" height="390" key="GridCell.Tab.0.right" timestamp="1587608583341">
+      <screen x="0" y="23" width="3440" height="1362" />
+    </state>
+    <state width="1678" height="390" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587608583341" />
     <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587549082575">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549082575" />
-    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587549036610">
+    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587599476013">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549036610" />
+    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587599476013" />
   </component>
 </project>

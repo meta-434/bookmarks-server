@@ -9,15 +9,15 @@ const logger = require('./logger');
 const store = require('./store');
 const validateBearerToken = require('./validate-bearer-token');
 const errorHandler = require('./error-handler');
-const { NODE_ENV } = require('./config');
+const { NODE_ENV, PORT, CLIENT_ORIGIN } = require('./config');
 const app = express();
 const BookmarksService = require('./bookmarks-service.js');
 
 const morganSetting = NODE_ENV === 'production' ? 'tiny' : 'common';
 app.use(morgan(morganSetting));
-app.use(express.json());
-app.use(cors());
+app.use(cors({origin: CLIENT_ORIGIN}));
 app.use(validateBearerToken);
+app.use(express.json());
 app.use(helmet());
 
 app.get(`/`, (req, res, next) => {
@@ -40,7 +40,6 @@ app.get('/bookmarks/:id', (req, res) => {
 
 app.get('/bookmarks', (req, res) => {
     const knexInstance = req.app.get('db');
-    console.log('MADE IT HERE');
     BookmarksService.getAllBookmarks(knexInstance)
         .then(bookmarks => {
             res.json(bookmarks);
@@ -88,10 +87,5 @@ app.use((error, req, res, next) => {
 });
 
 app.use(errorHandler);
-const PORT = PORT || 9090;
-
-app.listen(PORT, () => {
-    console.log(`Server listening at http://localhost:${PORT}`)
-});
 
 module.exports = app;
