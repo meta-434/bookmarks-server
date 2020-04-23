@@ -1,0 +1,72 @@
+2020-04-23T10:25:02.473Z [error] invalid url www.test-bookmark.com
+2020-04-23T10:25:02.481Z [error] title is required
+2020-04-23T10:25:02.489Z [error] url is required
+2020-04-23T10:25:02.496Z [error] rating is required
+2020-04-23T10:25:02.502Z [info] Unauthorized request to path: /bookmarks
+2020-04-23T10:25:02.510Z [info] Unauthorized request to path: /bookmarks/2
+2020-04-23T10:25:02.517Z [info] Unauthorized request to path: /bookmarks/123456
+2020-04-23T10:25:46.957Z [error] invalid url www.test-bookmark.com
+2020-04-23T10:25:46.968Z [error] title is required
+2020-04-23T10:25:46.979Z [error] url is required
+2020-04-23T10:25:46.987Z [error] rating is required
+2020-04-23T10:25:46.995Z [info] Unauthorized request to path: /bookmarks
+2020-04-23T10:25:47.004Z [info] Unauthorized request to path: /bookmarks/2
+2020-04-23T10:25:47.011Z [info] Unauthorized request to path: /bookmarks/123456
+2020-04-23T10:26:24.504Z [error] invalid url www.test-bookmark.com
+2020-04-23T10:26:24.513Z [error] title is required
+2020-04-23T10:26:24.520Z [error] url is required
+2020-04-23T10:26:24.527Z [error] rating is required
+2020-04-23T10:26:24.533Z [info] Unauthorized request to path: /bookmarks
+2020-04-23T10:26:24.541Z [info] Unauthorized request to path: /bookmarks/2
+2020-04-23T10:26:24.546Z [info] Unauthorized request to path: /bookmarks/123456
+2020-04-23T10:27:08.749Z [error] invalid url www.test-bookmark.com
+2020-04-23T10:27:08.757Z [error] title is required
+2020-04-23T10:27:08.765Z [error] url is required
+2020-04-23T10:27:08.772Z [error] rating is required
+2020-04-23T10:27:08.779Z [info] Unauthorized request to path: /bookmarks
+2020-04-23T10:27:08.787Z [info] Unauthorized request to path: /bookmarks/2
+2020-04-23T10:27:08.793Z [info] Unauthorized request to path: /bookmarks/123456
+2020-04-23T10:27:23.868Z [error] invalid url www.test.com
+2020-04-23T10:27:23.877Z [error] title is required
+2020-04-23T10:27:23.885Z [error] url is required
+2020-04-23T10:27:23.893Z [error] rating is required
+2020-04-23T10:27:23.901Z [info] Unauthorized request to path: /bookmarks
+2020-04-23T10:27:23.909Z [info] Unauthorized request to path: /bookmarks/2
+2020-04-23T10:27:23.916Z [info] Unauthorized request to path: /bookmarks/123456
+2020-04-23T10:29:22.734Z [error] invalid url www.test.com
+2020-04-23T10:29:22.743Z [error] title is required
+2020-04-23T10:29:22.753Z [error] url is required
+2020-04-23T10:29:22.761Z [error] rating is required
+2020-04-23T10:29:22.770Z [error] invalid url www.xsstest.com
+2020-04-23T10:29:41.996Z [error] invalid url www.test.com
+2020-04-23T10:29:42.004Z [error] title is required
+2020-04-23T10:29:42.012Z [error] url is required
+2020-04-23T10:29:42.019Z [error] rating is required
+2020-04-23T10:29:42.026Z [error] invalid url www.xsstest.com
+2020-04-23T10:30:06.871Z [error] invalid url www.test.com
+2020-04-23T10:30:06.880Z [error] title is required
+2020-04-23T10:30:06.888Z [error] url is required
+2020-04-23T10:30:06.894Z [error] rating is required
+2020-04-23T10:30:06.901Z [error] invalid url www.xsstest.com
+2020-04-23T10:31:02.131Z [error] invalid url www.test.com
+2020-04-23T10:31:02.143Z [error] title is required
+2020-04-23T10:31:02.153Z [error] url is required
+2020-04-23T10:31:02.159Z [error] invalid url www.testbookmark.com
+2020-04-23T10:31:02.167Z [error] invalid url www.xsstest.com
+2020-04-23T10:31:16.195Z [error] invalid url www.test.com
+2020-04-23T10:31:16.205Z [error] title is required
+2020-04-23T10:31:16.216Z [error] url is required
+2020-04-23T10:31:16.224Z [error] invalid url www.testbookmark.com
+2020-04-23T10:31:16.233Z [error] invalid url www.xsstest.com
+2020-04-23T10:32:00.818Z [error] invalid url www.testurl.com
+2020-04-23T10:32:00.826Z [error] title is required
+2020-04-23T10:32:00.835Z [error] url is required
+2020-04-23T10:32:00.842Z [error] invalid url www.testbookmark.com
+2020-04-23T10:32:00.848Z [error] rating is required
+2020-04-23T10:32:00.855Z [error] invalid url www.xsstest.com
+2020-04-23T10:32:06.482Z [error] invalid url www.testurl.com
+2020-04-23T10:32:06.493Z [error] title is required
+2020-04-23T10:32:06.504Z [error] url is required
+2020-04-23T10:32:06.512Z [error] invalid url www.testbookmark.com
+2020-04-23T10:32:06.520Z [error] rating is required
+2020-04-23T10:32:06.528Z [error] invalid url www.xsstest.com

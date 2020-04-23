@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a739d3d-f367-4725-bfba-c3e86278e3bf" name="Default Changelist" comment="">
+    <list default="true" id="0a739d3d-f367-4725-bfba-c3e86278e3bf" name="Default Changelist" comment="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason...">
+      <change afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/articles-endpoints.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/bookmarks.fixtures.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/setup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookmarks-app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmarks-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/error-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/001.do.create_bookmarks.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/001.do.create_bookmarks.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seeds/seed.bookmarks.sql" beforeDir="false" afterPath="$PROJECT_DIR$/seeds/seed.bookmarks.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validate-bearer-token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate-bearer-token.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +55,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bookmarks-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="/usr/local/Cellar/yarn/1.19.2/libexec" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/bookmarks" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Mocha.Bookmarks Endpoints">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -60,16 +89,6 @@
       <command value="run" />
       <scripts>
         <script value="migrate" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="migrate:test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="migrate:test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -95,13 +114,28 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="Bookmarks Endpoints" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/articles-endpoints.spec.js</test-file>
+      <test-names>
+        <name value="Bookmarks Endpoints" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start (1)" />
+        <item itemvalue="Mocha.Bookmarks Endpoints" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.prebuild" />
+        <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.migrate" />
-        <item itemvalue="npm.migrate:test" />
+        <item itemvalue="npm.prebuild" />
       </list>
     </recent_temporary>
   </component>
@@ -117,44 +151,66 @@
       <updated>1587537819702</updated>
       <workItem from="1587537821123" duration="3307000" />
       <workItem from="1587549079996" duration="148000" />
+      <workItem from="1587631851724" duration="3023000" />
+      <workItem from="1587634916790" duration="3174000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason..." />
+    <option name="LAST_COMMIT_MESSAGE" value="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason..." />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="532" y="369" key="#Log_Highlighting_(ideolog)" timestamp="1587635487263">
+      <screen x="0" y="23" width="3440" height="1362" />
+    </state>
+    <state x="532" y="369" key="#Log_Highlighting_(ideolog)/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587635487263" />
+    <state x="675" y="514" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587635517940">
+      <screen x="0" y="23" width="3440" height="1362" />
+    </state>
+    <state x="675" y="514" key="#com.intellij.fileTypes.FileTypeChooser/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587635517940" />
     <state x="2585" y="236" key="#start" timestamp="1583183059620">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2585" y="236" key="#start/1920.0.1920.1080/0.0.1920.1044@1920.0.1920.1080" timestamp="1583183059620" />
+    <state x="543" y="305" key="CommitChangelistDialog2" timestamp="1587638060820">
+      <screen x="0" y="23" width="3440" height="1362" />
+    </state>
+    <state x="543" y="305" key="CommitChangelistDialog2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060820" />
     <state x="647" y="466" key="FileChooserDialogImpl" timestamp="1587599428103">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state x="647" y="466" key="FileChooserDialogImpl/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587599428103" />
-    <state width="1678" height="390" key="GridCell.Tab.0.bottom" timestamp="1587608583341">
+    <state width="1678" height="390" key="GridCell.Tab.0.bottom" timestamp="1587638060896">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587608583341" />
-    <state width="1678" height="390" key="GridCell.Tab.0.center" timestamp="1587608583340">
+    <state width="1678" height="390" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060896" />
+    <state width="1678" height="390" key="GridCell.Tab.0.center" timestamp="1587638060895">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587608583340" />
-    <state width="1678" height="390" key="GridCell.Tab.0.left" timestamp="1587608583339">
+    <state width="1678" height="390" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060895" />
+    <state width="1678" height="390" key="GridCell.Tab.0.left" timestamp="1587638060894">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587608583339" />
-    <state width="1678" height="390" key="GridCell.Tab.0.right" timestamp="1587608583341">
+    <state width="1678" height="390" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060894" />
+    <state width="1678" height="390" key="GridCell.Tab.0.right" timestamp="1587638060896">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587608583341" />
+    <state width="1678" height="390" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060896" />
     <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587549082575">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549082575" />
-    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587599476013">
+    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587633168793">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587599476013" />
+    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587633168793" />
+    <state x="597" y="334" width="670" height="676" key="search.everywhere.popup" timestamp="1587637610914">
+      <screen x="0" y="23" width="3440" height="1362" />
+    </state>
+    <state x="597" y="334" width="670" height="676" key="search.everywhere.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587637610914" />
   </component>
 </project>
