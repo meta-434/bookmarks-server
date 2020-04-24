@@ -31,7 +31,12 @@ bookmarksRouter
         for (const field of ['title', 'url', 'rating']) {
             if (!req.body[field]) {
                 logger.error(`${field} is required`);
-                return res.status(400).send(`'${field}' is required`)
+                res.status(400).send({
+                    error: {
+                        message: `Missing '${field}' in request body`
+                    }
+                });
+
             }
         }
 
@@ -41,7 +46,7 @@ bookmarksRouter
                 .status(400)
                 .send(isValid);
         }
-
+        console.log('isValid?> ', isValid);
         const newBookmark = { id: uuid(), title, url, description, rating: parseInt(rating, 10) };
 
         BookmarksService.insertBookmark(
@@ -51,7 +56,7 @@ bookmarksRouter
             .then(bookmark => {
                 res
                     .status(201)
-                    .location(path.posix.join(req.originalUrl, `${bookmark.id}`))
+                    .location(`/bookmarks/${bookmark.id}`)
                     .json(serializeBookmark(bookmark))
             })
             .catch(next)
@@ -90,8 +95,11 @@ bookmarksRouter
     })
     .patch((req, res, next) => {
         const { title, url, description, rating } = req.body;
-        const updateBookmarkTarget = {title, url, description, rating};
+        const updateBookmarkTarget = {id:req.params.id, title, url, description, rating};
+        console.log('req.body', req.body, 'req.params', req.params, updateBookmarkTarget);
 
+
+        console.log(updateBookmarkTarget);
         // this filter is a falsy bouncer, if a value in updateBookmarkTarget is falsy or doesn't exist, it is not
         // added to the resultant filter() array.
         const numberOfValues = Object.values(updateBookmarkTarget).filter(Boolean).length;

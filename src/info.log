@@ -70,3 +70,225 @@
 2020-04-23T10:32:06.512Z [error] invalid url www.testbookmark.com
 2020-04-23T10:32:06.520Z [error] rating is required
 2020-04-23T10:32:06.528Z [error] invalid url www.xsstest.com
+2020-04-24T18:12:11.409Z [error] invalid url www.testurl.com
+2020-04-24T18:12:11.426Z [error] title is required
+2020-04-24T18:12:11.437Z [error] url is required
+2020-04-24T18:12:11.443Z [error] invalid url www.testbookmark.com
+2020-04-24T18:12:11.451Z [error] rating is required
+2020-04-24T18:12:11.458Z [error] invalid url www.xsstest.com
+2020-04-24T18:12:18.968Z [error] invalid url www.testurl.com
+2020-04-24T18:12:18.979Z [error] title is required
+2020-04-24T18:12:18.988Z [error] url is required
+2020-04-24T18:12:18.994Z [error] invalid url www.testbookmark.com
+2020-04-24T18:12:19.003Z [error] rating is required
+2020-04-24T18:12:19.010Z [error] invalid url www.xsstest.com
+2020-04-24T18:15:16.802Z [error] invalid url www.testurl.com
+2020-04-24T18:15:16.818Z [error] title is required
+2020-04-24T18:15:16.827Z [error] url is required
+2020-04-24T18:15:16.834Z [error] invalid url www.testbookmark.com
+2020-04-24T18:15:16.842Z [error] rating is required
+2020-04-24T18:15:16.849Z [error] invalid url www.xsstest.com
+2020-04-24T18:16:27.917Z [error] invalid url www.testurl.com
+2020-04-24T18:16:27.929Z [error] title is required
+2020-04-24T18:16:27.940Z [error] url is required
+2020-04-24T18:16:27.947Z [error] invalid url www.testbookmark.com
+2020-04-24T18:16:27.955Z [error] rating is required
+2020-04-24T18:16:27.963Z [error] invalid url www.xsstest.com
+2020-04-24T18:17:56.412Z [error] invalid url www.testurl.com
+2020-04-24T18:17:56.431Z [error] title is required
+2020-04-24T18:17:58.437Z [error] url is required
+2020-04-24T18:18:00.447Z [error] invalid url www.testbookmark.com
+2020-04-24T18:18:00.455Z [error] rating is required
+2020-04-24T18:18:02.463Z [error] invalid url www.xsstest.com
+2020-04-24T18:19:29.977Z [error] invalid url www.testurl.com
+2020-04-24T18:19:30.004Z [error] title is required
+2020-04-24T18:19:32.016Z [error] url is required
+2020-04-24T18:19:34.026Z [error] invalid url www.testbookmark.com
+2020-04-24T18:19:34.035Z [error] rating is required
+2020-04-24T18:19:36.042Z [error] invalid url www.xsstest.com
+2020-04-24T18:22:28.488Z [error] invalid url www.testurl.com
+2020-04-24T18:22:28.649Z [error] invalid url www.xsstest.com
+2020-04-24T18:22:44.482Z [error] invalid url www.testurl.com
+2020-04-24T18:22:44.492Z [error] title is required
+2020-04-24T18:22:46.499Z [error] url is required
+2020-04-24T18:22:48.508Z [error] invalid url www.testbookmark.com
+2020-04-24T18:22:48.516Z [error] rating is required
+2020-04-24T18:22:50.527Z [error] invalid url www.xsstest.com
+2020-04-24T18:24:57.590Z [error] invalid url www.testurl.com
+2020-04-24T18:24:57.609Z [error] title is required
+2020-04-24T18:24:59.616Z [error] url is required
+2020-04-24T18:25:01.624Z [error] invalid url www.testbookmark.com
+2020-04-24T18:25:01.633Z [error] rating is required
+2020-04-24T18:25:03.642Z [error] invalid url www.xsstest.com
+2020-04-24T18:28:43.131Z [error] invalid url www.testurl.com
+2020-04-24T18:28:43.142Z [error] title is required
+2020-04-24T18:28:43.142Z [error] invalid url www.testbookmark.com
+2020-04-24T18:28:43.153Z [error] url is required
+2020-04-24T18:28:43.160Z [error] invalid url www.testbookmark.com
+2020-04-24T18:28:43.217Z [error] rating is required
+2020-04-24T18:28:43.217Z [error] rating of undefined is invalid, must be greater than 0 and less than 6
+2020-04-24T18:28:43.243Z [error] invalid url www.xsstest.com
+2020-04-24T18:29:32.150Z [error] invalid url www.testurl.com
+2020-04-24T18:29:32.167Z [error] title is required
+2020-04-24T18:29:32.167Z [error] invalid url www.testbookmark.com
+2020-04-24T18:29:32.176Z [error] url is required
+2020-04-24T18:29:32.182Z [error] invalid url www.testbookmark.com
+2020-04-24T18:29:32.194Z [error] rating is required
+2020-04-24T18:29:32.195Z [error] rating of undefined is invalid, must be greater than 0 and less than 6
+2020-04-24T18:29:32.201Z [error] invalid url www.xsstest.com
+2020-04-24T19:25:48.599Z [error] invalid url www.testurl.com
+2020-04-24T19:25:48.610Z [error] title is required
+2020-04-24T19:25:48.610Z [error] invalid url www.testbookmark.com
+2020-04-24T19:25:48.618Z [error] url is required
+2020-04-24T19:25:48.624Z [error] rating is required
+2020-04-24T19:25:48.624Z [error] rating of undefined is invalid, must be greater than 0 and less than 6
+2020-04-24T19:25:48.630Z [error] invalid url www.xsstest.com
+2020-04-24T19:25:58.977Z [error] invalid url www.testurl.com
+2020-04-24T19:25:58.995Z [error] title is required
+2020-04-24T19:25:58.995Z [error] invalid url www.testbookmark.com
+2020-04-24T19:25:59.004Z [error] url is required
+2020-04-24T19:25:59.010Z [error] rating is required
+2020-04-24T19:25:59.010Z [error] rating of undefined is invalid, must be greater than 0 and less than 6
+2020-04-24T19:25:59.017Z [error] invalid url www.xsstest.com
+2020-04-24T20:51:33.751Z [error] Invalid update without required fields
+2020-04-24T20:51:33.781Z [error] Invalid update without required fields
+2020-04-24T20:51:33.789Z [error] Invalid update without required fields
+2020-04-24T20:51:33.800Z [error] Invalid update without required fields
+2020-04-24T20:51:33.807Z [error] Invalid update without required fields
+2020-04-24T20:51:33.815Z [error] Invalid update without required fields
+2020-04-24T20:51:33.824Z [error] Invalid update without required fields
+2020-04-24T20:51:33.832Z [error] Invalid update without required fields
+2020-04-24T20:51:33.840Z [error] Invalid update without required fields
+2020-04-24T20:51:33.851Z [error] Invalid update without required fields
+2020-04-24T20:51:33.860Z [error] Invalid update without required fields
+2020-04-24T20:51:33.865Z [error] Invalid update without required fields
+2020-04-24T20:51:33.870Z [error] Invalid update without required fields
+2020-04-24T20:51:33.875Z [error] Invalid update without required fields
+2020-04-24T20:51:33.879Z [error] Invalid update without required fields
+2020-04-24T20:51:33.888Z [error] Invalid update without required fields
+2020-04-24T20:51:33.891Z [error] Invalid update without required fields
+2020-04-24T20:51:33.897Z [error] Invalid update without required fields
+2020-04-24T20:51:33.902Z [error] Invalid update without required fields
+2020-04-24T20:51:33.908Z [error] Invalid update without required fields
+2020-04-24T20:51:33.914Z [error] Invalid update without required fields
+2020-04-24T20:51:33.918Z [error] Invalid update without required fields
+2020-04-24T20:51:33.922Z [error] Invalid update without required fields
+2020-04-24T20:51:33.929Z [error] Invalid update without required fields
+2020-04-24T20:51:33.934Z [error] Invalid update without required fields
+2020-04-24T20:51:33.938Z [error] Invalid update without required fields
+2020-04-24T20:51:33.944Z [error] Invalid update without required fields
+2020-04-24T20:51:33.948Z [error] Invalid update without required fields
+2020-04-24T20:51:33.954Z [error] Invalid update without required fields
+2020-04-24T20:51:33.961Z [error] Invalid update without required fields
+2020-04-24T20:51:33.967Z [error] Invalid update without required fields
+2020-04-24T20:51:33.975Z [error] Invalid update without required fields
+2020-04-24T20:51:33.982Z [error] Invalid update without required fields
+2020-04-24T20:51:33.986Z [error] Invalid update without required fields
+2020-04-24T20:51:33.991Z [error] Invalid update without required fields
+2020-04-24T20:51:33.997Z [error] Invalid update without required fields
+2020-04-24T20:51:34.001Z [error] Invalid update without required fields
+2020-04-24T20:51:34.005Z [error] Invalid update without required fields
+2020-04-24T20:51:34.010Z [error] Invalid update without required fields
+2020-04-24T20:51:34.014Z [error] Invalid update without required fields
+2020-04-24T20:51:34.022Z [error] Invalid update without required fields
+2020-04-24T20:51:34.026Z [error] Invalid update without required fields
+2020-04-24T20:51:34.031Z [error] Invalid update without required fields
+2020-04-24T20:51:34.035Z [error] Invalid update without required fields
+2020-04-24T20:51:34.043Z [error] Invalid update without required fields
+2020-04-24T20:51:34.049Z [error] Invalid update without required fields
+2020-04-24T20:51:34.053Z [error] Invalid update without required fields
+2020-04-24T20:51:34.057Z [error] Invalid update without required fields
+2020-04-24T20:51:34.063Z [error] Invalid update without required fields
+2020-04-24T20:51:34.068Z [error] Invalid update without required fields
+2020-04-24T20:51:34.075Z [error] Invalid update without required fields
+2020-04-24T20:51:34.081Z [error] Invalid update without required fields
+2020-04-24T20:51:34.086Z [error] Invalid update without required fields
+2020-04-24T21:05:37.299Z [error] invalid url www.testurl.com
+2020-04-24T21:05:37.317Z [error] title is required
+2020-04-24T21:05:37.318Z [error] invalid url www.testbookmark.com
+2020-04-24T21:05:37.327Z [error] url is required
+2020-04-24T21:05:37.333Z [error] rating is required
+2020-04-24T21:05:37.334Z [error] rating of undefined is invalid, must be greater than 0 and less than 6
+2020-04-24T21:05:37.342Z [error] invalid url www.xsstest.com
+2020-04-24T21:05:52.843Z [error] invalid url www.testurl.com
+2020-04-24T21:05:52.856Z [error] title is required
+2020-04-24T21:05:52.857Z [error] invalid url www.testbookmark.com
+2020-04-24T21:05:52.867Z [error] url is required
+2020-04-24T21:05:52.876Z [error] rating is required
+2020-04-24T21:05:52.877Z [error] rating of undefined is invalid, must be greater than 0 and less than 6
+2020-04-24T21:05:52.887Z [error] invalid url www.xsstest.com
+2020-04-24T21:17:44.063Z [error] Invalid update without required fields
+2020-04-24T21:17:44.102Z [error] Invalid update without required fields
+2020-04-24T21:17:44.113Z [error] Invalid update without required fields
+2020-04-24T21:17:44.120Z [error] Invalid update without required fields
+2020-04-24T21:17:44.139Z [error] Invalid update without required fields
+2020-04-24T21:17:44.143Z [error] Invalid update without required fields
+2020-04-24T21:17:44.148Z [error] Invalid update without required fields
+2020-04-24T21:17:44.168Z [error] Invalid update without required fields
+2020-04-24T21:17:44.172Z [error] Invalid update without required fields
+2020-04-24T21:17:44.174Z [error] Invalid update without required fields
+2020-04-24T21:17:44.178Z [error] Invalid update without required fields
+2020-04-24T21:17:44.204Z [error] Invalid update without required fields
+2020-04-24T21:17:44.248Z [error] Invalid update without required fields
+2020-04-24T21:17:44.269Z [error] Invalid update without required fields
+2020-04-24T21:17:44.300Z [error] Invalid update without required fields
+2020-04-24T21:17:44.315Z [error] Invalid update without required fields
+2020-04-24T21:17:44.324Z [error] Invalid update without required fields
+2020-04-24T21:17:44.332Z [error] Invalid update without required fields
+2020-04-24T21:17:44.340Z [error] Invalid update without required fields
+2020-04-24T21:17:44.351Z [error] Invalid update without required fields
+2020-04-24T21:17:44.361Z [error] Invalid update without required fields
+2020-04-24T21:17:44.370Z [error] Invalid update without required fields
+2020-04-24T21:17:44.377Z [error] Invalid update without required fields
+2020-04-24T21:17:44.386Z [error] Invalid update without required fields
+2020-04-24T21:17:44.396Z [error] Invalid update without required fields
+2020-04-24T21:17:44.404Z [error] Invalid update without required fields
+2020-04-24T21:17:44.413Z [error] Invalid update without required fields
+2020-04-24T21:17:44.423Z [error] Invalid update without required fields
+2020-04-24T21:17:44.438Z [error] Invalid update without required fields
+2020-04-24T21:17:44.454Z [error] Invalid update without required fields
+2020-04-24T21:17:44.465Z [error] Invalid update without required fields
+2020-04-24T21:17:44.472Z [error] Invalid update without required fields
+2020-04-24T21:17:44.481Z [error] Invalid update without required fields
+2020-04-24T21:17:44.487Z [error] Invalid update without required fields
+2020-04-24T21:17:44.496Z [error] Invalid update without required fields
+2020-04-24T21:17:44.502Z [error] Invalid update without required fields
+2020-04-24T21:17:44.511Z [error] Invalid update without required fields
+2020-04-24T21:17:44.516Z [error] Invalid update without required fields
+2020-04-24T21:17:44.520Z [error] Invalid update without required fields
+2020-04-24T21:17:44.525Z [error] Invalid update without required fields
+2020-04-24T21:17:44.533Z [error] Invalid update without required fields
+2020-04-24T21:17:44.541Z [error] Invalid update without required fields
+2020-04-24T21:17:44.546Z [error] Invalid update without required fields
+2020-04-24T21:17:44.553Z [error] Invalid update without required fields
+2020-04-24T21:17:44.563Z [error] Invalid update without required fields
+2020-04-24T21:17:44.573Z [error] Invalid update without required fields
+2020-04-24T21:17:44.579Z [error] Invalid update without required fields
+2020-04-24T21:17:44.587Z [error] Invalid update without required fields
+2020-04-24T21:17:44.591Z [error] Invalid update without required fields
+2020-04-24T21:17:44.604Z [error] Invalid update without required fields
+2020-04-24T21:17:44.605Z [error] Invalid update without required fields
+2020-04-24T21:17:44.611Z [error] Invalid update without required fields
+2020-04-24T21:17:44.617Z [error] Invalid update without required fields
+2020-04-24T21:21:52.126Z [error] Invalid update without required fields
+2020-04-24T22:38:03.968Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T22:58:46.531Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T22:59:12.445Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:07.065Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:33.577Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:35.880Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:36.270Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:36.451Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:36.636Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:36.819Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:37.015Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:37.184Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:37.358Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:37.527Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:00:37.704Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:01:08.307Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:02:04.521Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:14:19.594Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:18:00.915Z [error] rating of 5 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:18:21.257Z [error] rating of 4 is invalid, must be greater than 0 and less than 6
+2020-04-24T23:18:25.693Z [error] rating of 5 is invalid, must be greater than 0 and less than 6

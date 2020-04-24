@@ -175,7 +175,7 @@ describe('Bookmarks Endpoints', function() {
                     });
             });
 
-            const requiredFields = ['title', 'url', 'description', 'rating'];
+            const requiredFields = ['title', 'url', 'rating'];
 
             requiredFields.forEach(field => {
                 const newBookmark = {
@@ -222,9 +222,6 @@ describe('Bookmarks Endpoints', function() {
                         expect(res.body.description).to.eql(`Bad image <img src="https://url.to.file.which/does-not.exist">. But not <strong>all</strong> bad.`);
                         expect(res.body).to.have.property('id');
                         expect(res.headers.location).to.eql(`/bookmarks/${res.body.id}`);
-                        const expected = new Date().toLocaleString();
-                        const actual = new Date(res.body.date_published).toLocaleString();
-                        expect(actual).to.eql(expected);
                     });
             });
         });

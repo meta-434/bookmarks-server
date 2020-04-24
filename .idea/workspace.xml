@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a739d3d-f367-4725-bfba-c3e86278e3bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bookmarks/bookmark-validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookmarks-app/src/EditBookmark/EditBookmark.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/AddBookmark/AddBookmark.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/AddBookmark/AddBookmark.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/BookmarkItem/BookmarkItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/BookmarkItem/BookmarkItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bookmarks/bookmarks-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate-bearer-token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate-bearer-token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bookmarks/bookmarks-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/articles-endpoints.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/articles-endpoints.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/setup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,7 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="/usr/local/Cellar/yarn/1.19.2/libexec" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
@@ -111,9 +118,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.Bookmarks Endpoints" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start (1)" />
+        <item itemvalue="Mocha.Bookmarks Endpoints" />
         <item itemvalue="npm.migrate" />
         <item itemvalue="npm.prebuild" />
       </list>
@@ -132,7 +139,7 @@
       <workItem from="1587537821123" duration="3307000" />
       <workItem from="1587549079996" duration="148000" />
       <workItem from="1587631851724" duration="3023000" />
-      <workItem from="1587634916790" duration="5520000" />
+      <workItem from="1587634916790" duration="18537000" />
     </task>
     <task id="LOCAL-00001" summary="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason...">
       <created>1587638141565</created>
@@ -141,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587638141565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor for /PATCH">
+      <created>1587722298877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587722298877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +163,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason..." />
-    <option name="LAST_COMMIT_MESSAGE" value="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason..." />
+    <MESSAGE value="refactor for /PATCH" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor for /PATCH" />
   </component>
   <component name="WindowStateProjectService">
     <state x="532" y="369" key="#Log_Highlighting_(ideolog)" timestamp="1587635487263">
@@ -164,42 +179,50 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2585" y="236" key="#start/1920.0.1920.1080/0.0.1920.1044@1920.0.1920.1080" timestamp="1583183059620" />
-    <state x="543" y="305" key="CommitChangelistDialog2" timestamp="1587722287820">
+    <state x="543" y="305" key="CommitChangelistDialog2" timestamp="1587722298757">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="543" y="305" key="CommitChangelistDialog2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587722287820" />
+    <state x="543" y="305" key="CommitChangelistDialog2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587722298757" />
     <state x="647" y="466" key="FileChooserDialogImpl" timestamp="1587599428103">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state x="647" y="466" key="FileChooserDialogImpl/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587599428103" />
-    <state width="1678" height="390" key="GridCell.Tab.0.bottom" timestamp="1587638060896">
+    <state width="1678" height="376" key="GridCell.Tab.0.bottom" timestamp="1587770055329">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060896" />
-    <state width="1678" height="390" key="GridCell.Tab.0.center" timestamp="1587638060895">
+    <state width="1678" height="376" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587770055329" />
+    <state width="1678" height="376" key="GridCell.Tab.0.center" timestamp="1587770055328">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060895" />
-    <state width="1678" height="390" key="GridCell.Tab.0.left" timestamp="1587638060894">
+    <state width="1678" height="376" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587770055328" />
+    <state width="1678" height="376" key="GridCell.Tab.0.left" timestamp="1587770055328">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060894" />
-    <state width="1678" height="390" key="GridCell.Tab.0.right" timestamp="1587638060896">
+    <state width="1678" height="376" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587770055328" />
+    <state width="1678" height="376" key="GridCell.Tab.0.right" timestamp="1587770055329">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="390" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060896" />
+    <state width="1678" height="376" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587770055329" />
     <state x="532" y="432" key="Vcs.Push.Dialog.v2" timestamp="1587638160086">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state x="532" y="432" key="Vcs.Push.Dialog.v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638160086" />
-    <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587549082575">
+    <state x="172" y="123" width="1520" height="1162" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587767734457">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549082575" />
-    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587721987597">
+    <state x="172" y="123" width="1520" height="1162" key="com.intellij.history.integration.ui.views.FileHistoryDialog/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587767734457" />
+    <state x="172" y="123" width="1520" height="1162" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1587752106127">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587721987597" />
+    <state x="172" y="123" width="1520" height="1162" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587752106127" />
+    <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587765810926">
+      <screen x="0" y="23" width="3440" height="1362" />
+    </state>
+    <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587765810926" />
+    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587768537721">
+      <screen x="0" y="23" width="3440" height="1362" />
+    </state>
+    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587768537721" />
     <state x="597" y="334" width="670" height="676" key="search.everywhere.popup" timestamp="1587637610914">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>

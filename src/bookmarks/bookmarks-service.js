@@ -23,7 +23,7 @@ const BookmarksService = {
     },
     updateBookmark(knex, id, newBookmarkFields) {
         return knex('bookmarks')
-            .where({ id })
+            .where('id', id)
             .update(newBookmarkFields)
     },
 };
