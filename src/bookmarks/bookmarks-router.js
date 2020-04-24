@@ -1,11 +1,10 @@
 const express = require('express');
 const BookmarksService = require('./bookmarks-service');
-
+const { validateBookmark } = require('./bookmark-validator');
 const bookmarksRouter = express.Router();
 const jsonParser = express.json();
 const logger = require('../logger');
 const xss = require('xss');
-const { isWebUri } = require('valid-url');
 const { v4: uuid } = require('uuid');
 
 const serializeBookmark = bookmark => ({
@@ -35,16 +34,16 @@ bookmarksRouter
                 return res.status(400).send(`'${field}' is required`)
             }
         }
-        if (parseInt(rating, 10) < 1 || parseInt(rating, 10) > 5) {
-            logger.error(`rating of ${rating} is invalid, must be greater than 0 and less than 6`);
-            return res.status(400).send(`invalid rating ${rating}. rating must be 1-5`);
-        }
-        if (!isWebUri(url)) {
-            logger.error(`invalid url ${url}`);
-            return res.status(400).send(`invalid url ${url}. must be a valid url.`)
+
+        const isValid = !!validateBookmark({url, rating});
+        if (isValid !== true) {
+            return res
+                .status(400)
+                .send(isValid);
         }
 
         const newBookmark = { id: uuid(), title, url, description, rating: parseInt(rating, 10) };
+
         BookmarksService.insertBookmark(
             req.app.get('db'),
             newBookmark
@@ -52,7 +51,7 @@ bookmarksRouter
             .then(bookmark => {
                 res
                     .status(201)
-                    .location(`/bookmarks/${bookmark.id}`)
+                    .location(path.posix.join(req.originalUrl, `${bookmark.id}`))
                     .json(serializeBookmark(bookmark))
             })
             .catch(next)
@@ -88,6 +87,44 @@ bookmarksRouter
                 res.status(204).end()
             })
             .catch(next)
+    })
+    .patch((req, res, next) => {
+        const { title, url, description, rating } = req.body;
+        const updateBookmarkTarget = {title, url, description, rating};
+
+        // this filter is a falsy bouncer, if a value in updateBookmarkTarget is falsy or doesn't exist, it is not
+        // added to the resultant filter() array.
+        const numberOfValues = Object.values(updateBookmarkTarget).filter(Boolean).length;
+        if (numberOfValues === 0) {
+            logger.error(`Invalid update without required fields`);
+            return res
+                .status(400)
+                .json({
+                    error: {
+                        message: `Request body content must be one of 'title', 'url', 'description', or 'rating'`
+                    }
+                });
+        }
+
+        const isValid = !!validateBookmark({url, rating});
+        if (isValid !== true) {
+            return res
+                .status(400)
+                .send(isValid);
+        }
+
+        const { bookmark_id } = req.params;
+        BookmarksService.updateBookmark(
+          req.app.get('db'),
+          bookmark_id,
+          updateBookmarkTarget
+        )
+            .then(numRowsAffected => {
+                res
+                    .status(204)
+                    .end();
+            })
+            .catch(next);
     });
 
 module.exports = bookmarksRouter;

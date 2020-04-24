@@ -1,31 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a739d3d-f367-4725-bfba-c3e86278e3bf" name="Default Changelist" comment="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason...">
-      <change afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/info.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/app.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/articles-endpoints.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/bookmarks.fixtures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookmarks-app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/config.js" afterDir="false" />
+    <list default="true" id="0a739d3d-f367-4725-bfba-c3e86278e3bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/bookmarks/bookmark-validator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmarks-service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/error-handler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/001.do.create_bookmarks.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/001.do.create_bookmarks.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seeds/seed.bookmarks.sql" beforeDir="false" afterPath="$PROJECT_DIR$/seeds/seed.bookmarks.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validate-bearer-token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate-bearer-token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bookmarks/bookmarks-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate-bearer-token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate-bearer-token.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,8 +132,16 @@
       <workItem from="1587537821123" duration="3307000" />
       <workItem from="1587549079996" duration="148000" />
       <workItem from="1587631851724" duration="3023000" />
-      <workItem from="1587634916790" duration="3174000" />
+      <workItem from="1587634916790" duration="5520000" />
     </task>
+    <task id="LOCAL-00001" summary="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason...">
+      <created>1587638141565</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587638141565</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,10 +164,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2585" y="236" key="#start/1920.0.1920.1080/0.0.1920.1044@1920.0.1920.1080" timestamp="1583183059620" />
-    <state x="543" y="305" key="CommitChangelistDialog2" timestamp="1587638060820">
+    <state x="543" y="305" key="CommitChangelistDialog2" timestamp="1587722287820">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="543" y="305" key="CommitChangelistDialog2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060820" />
+    <state x="543" y="305" key="CommitChangelistDialog2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587722287820" />
     <state x="647" y="466" key="FileChooserDialogImpl" timestamp="1587599428103">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
@@ -200,14 +188,18 @@
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state width="1678" height="390" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638060896" />
+    <state x="532" y="432" key="Vcs.Push.Dialog.v2" timestamp="1587638160086">
+      <screen x="0" y="23" width="3440" height="1362" />
+    </state>
+    <state x="532" y="432" key="Vcs.Push.Dialog.v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638160086" />
     <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587549082575">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587549082575" />
-    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587633168793">
+    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587721987597">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587633168793" />
+    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587721987597" />
     <state x="597" y="334" width="670" height="676" key="search.everywhere.popup" timestamp="1587637610914">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
