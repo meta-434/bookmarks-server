@@ -96,7 +96,6 @@ bookmarksRouter
     .patch((req, res, next) => {
         const {title, url, description, rating } = req.body;
         const updateBookmarkTarget = {title, url, description, rating: parseInt(rating, 10)};
-        console.log('updateBookmarkTarget', updateBookmarkTarget);
         // this filter is a falsy bouncer, if a value in updateBookmarkTarget is falsy or doesn't exist, it is not
         // added to the resultant filter() array.
         const numberOfValues = Object.values(updateBookmarkTarget).filter(Boolean).length;

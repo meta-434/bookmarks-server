@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a739d3d-f367-4725-bfba-c3e86278e3bf" name="Default Changelist" comment="/PATCH methods &amp; endpoint fixed">
+    <list default="true" id="0a739d3d-f367-4725-bfba-c3e86278e3bf" name="Default Changelist" comment="fix PATCH, fix typo in BookmarkItem.js' defaultProps">
+      <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/BookmarkItem/BookmarkItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/BookmarkItem/BookmarkItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/BookmarkList/BookmarkList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/BookmarkList/BookmarkList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bookmarks-app/src/EditBookmark/EditBookmark.js" beforeDir="false" afterPath="$PROJECT_DIR$/../bookmarks-app/src/EditBookmark/EditBookmark.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bookmarks/bookmark-validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bookmarks/bookmark-validator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bookmarks/bookmarks-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bookmarks/bookmarks-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bookmarks/bookmarks-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/info.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../bookmarks-app" />
   </component>
   <component name="ProjectId" id="1YaKbr1r0qwqRXTdVw4w337Ej7Q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -135,7 +135,7 @@
       <workItem from="1587537821123" duration="3307000" />
       <workItem from="1587549079996" duration="148000" />
       <workItem from="1587631851724" duration="3023000" />
-      <workItem from="1587634916790" duration="21495000" />
+      <workItem from="1587634916790" duration="24409000" />
     </task>
     <task id="LOCAL-00001" summary="implement API, delete store, implement tests&#10;/POST tests are still broken for some reason...">
       <created>1587638141565</created>
@@ -158,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587770363704</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="/PATCH needs a refresh before rendering...">
+      <created>1587774418278</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587774418278</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +176,9 @@
     <MESSAGE value="refactor for /PATCH" />
     <MESSAGE value="/PATCH still broken..." />
     <MESSAGE value="/PATCH methods &amp; endpoint fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="/PATCH methods &amp; endpoint fixed" />
+    <MESSAGE value="/PATCH needs a refresh before rendering..." />
+    <MESSAGE value="fix PATCH, fix typo in BookmarkItem.js' defaultProps" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix PATCH, fix typo in BookmarkItem.js' defaultProps" />
   </component>
   <component name="WindowStateProjectService">
     <state x="532" y="369" key="#Log_Highlighting_(ideolog)" timestamp="1587635487263">
@@ -184,34 +193,34 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2585" y="236" key="#start/1920.0.1920.1080/0.0.1920.1044@1920.0.1920.1080" timestamp="1583183059620" />
-    <state x="543" y="305" key="CommitChangelistDialog2" timestamp="1587773593721">
+    <state x="543" y="305" key="CommitChangelistDialog2" timestamp="1587778215784">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="543" y="305" key="CommitChangelistDialog2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587773593721" />
+    <state x="543" y="305" key="CommitChangelistDialog2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587778215784" />
     <state x="647" y="466" key="FileChooserDialogImpl" timestamp="1587599428103">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state x="647" y="466" key="FileChooserDialogImpl/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587599428103" />
-    <state width="1678" height="376" key="GridCell.Tab.0.bottom" timestamp="1587774350044">
+    <state width="1678" height="376" key="GridCell.Tab.0.bottom" timestamp="1587777655048">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="376" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587774350044" />
-    <state width="1678" height="376" key="GridCell.Tab.0.center" timestamp="1587774350043">
+    <state width="1678" height="376" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587777655048" />
+    <state width="1678" height="376" key="GridCell.Tab.0.center" timestamp="1587777655047">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="376" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587774350043" />
-    <state width="1678" height="376" key="GridCell.Tab.0.left" timestamp="1587774350043">
+    <state width="1678" height="376" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587777655047" />
+    <state width="1678" height="376" key="GridCell.Tab.0.left" timestamp="1587777655047">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="376" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587774350043" />
-    <state width="1678" height="376" key="GridCell.Tab.0.right" timestamp="1587774350044">
+    <state width="1678" height="376" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587777655047" />
+    <state width="1678" height="376" key="GridCell.Tab.0.right" timestamp="1587777655048">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state width="1678" height="376" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587774350044" />
-    <state x="532" y="432" key="Vcs.Push.Dialog.v2" timestamp="1587638160086">
+    <state width="1678" height="376" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587777655048" />
+    <state x="532" y="432" key="Vcs.Push.Dialog.v2" timestamp="1587774460365">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="532" y="432" key="Vcs.Push.Dialog.v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587638160086" />
+    <state x="532" y="432" key="Vcs.Push.Dialog.v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587774460365" />
     <state x="172" y="123" width="1520" height="1162" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587767734457">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
@@ -224,10 +233,10 @@
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
     <state x="665" y="628" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587765810926" />
-    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587768537721">
+    <state x="540" y="461" width="639" height="486" key="find.popup" timestamp="1587777498013">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
-    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587768537721" />
+    <state x="540" y="461" width="639" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1362@0.23.3440.1362" timestamp="1587777498013" />
     <state x="597" y="334" width="670" height="676" key="search.everywhere.popup" timestamp="1587637610914">
       <screen x="0" y="23" width="3440" height="1362" />
     </state>
