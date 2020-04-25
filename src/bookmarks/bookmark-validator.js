@@ -2,8 +2,7 @@ const {isWebUri} = require('valid-url');
 const logger = require('../logger');
 
 const validateBookmark = ({url, rating}) => {
-
-    if (!Number.isInteger(rating) || parseInt(rating, 10) < 1 || parseInt(rating, 10) > 5) {
+    if (!Number.isInteger(parseInt(rating, 10)) || parseInt(rating, 10) < 1 || parseInt(rating, 10) > 5) {
         logger.error(`rating of ${rating} is invalid, must be greater than 0 and less than 6`);
         return {
             error: {
